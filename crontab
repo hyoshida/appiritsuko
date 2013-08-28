@@ -1,0 +1,10 @@
+HOME=/home/yoshida
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+DISPLAY=:0
+
+# min   hour    day     month   week    command
+00      10      *       *       1-5     ${HOME}/appiritsuko/ritsuko_login.py
+30      18      *       *       1-5     ${HOME}/appiritsuko/ritsuko_oshaberi.py
+00      19      *       *       1-5     ${HOME}/appiritsuko/ritsuko_logout.py
+*/10    10-19   *       *       1-5     ${HOME}/appiritsuko/ritsuko_sleeping.py
+30      9       *       *       1-5     /usr/bin/touch ${HOME}/.appiritsko/talk.ini
